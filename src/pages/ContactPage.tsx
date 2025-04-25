@@ -1,11 +1,14 @@
 
 import { ArrowLeft, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-4 py-16">
+    <div className="min-h-screen bg-white flex flex-col">
+      <Navbar />
+      <div className="container mx-auto px-4 py-16 flex-grow">
         <Link to="/" className="inline-flex items-center text-purple-600 hover:text-purple-700 mb-8">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Home
@@ -95,6 +98,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
