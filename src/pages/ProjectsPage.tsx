@@ -14,7 +14,8 @@ const ProjectsPage = () => {
         "200% increase in booking conversions",
         "Reduced cost per acquisition by 40%",
         "Improved ad engagement rates by 150%"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop"
     },
     {
       title: "On Time Tourism",
@@ -23,7 +24,8 @@ const ProjectsPage = () => {
         "Website development and optimization",
         "Brand identity and promotional materials",
         "Online booking system implementation"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop"
     },
     {
       title: "Future Astro",
@@ -32,7 +34,8 @@ const ProjectsPage = () => {
         "300% increase in Instagram followers",
         "High engagement rates on Reels content",
         "Successful Meta Ads campaigns"
-      ]
+      ],
+      image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2013&auto=format&fit=crop"
     }
   ];
 
@@ -71,6 +74,7 @@ const ProjectsPage = () => {
               description={project.description}
               achievements={project.achievements}
               index={index}
+              image={project.image}
             />
           ))}
         </div>

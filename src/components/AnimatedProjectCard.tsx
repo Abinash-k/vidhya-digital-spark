@@ -8,9 +8,10 @@ interface AnimatedProjectCardProps {
   description: string;
   achievements: string[];
   index: number;
+  image: string;
 }
 
-const AnimatedProjectCard = ({ title, description, achievements, index }: AnimatedProjectCardProps) => {
+const AnimatedProjectCard = ({ title, description, achievements, index, image }: AnimatedProjectCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -49,7 +50,11 @@ const AnimatedProjectCard = ({ title, description, achievements, index }: Animat
         `delay-${index * 200}`
       )}
     >
-      <Card className="border-b border-gray-200 pb-8 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-shadow">
+      <Card className="border-b border-gray-200 pb-8 bg-white/80 backdrop-blur-sm hover:shadow-lg transition-shadow overflow-hidden">
+        <div className="h-48 w-full relative">
+          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20"></div>
+        </div>
         <CardContent className="pt-6">
           <h2 className="text-2xl font-semibold mb-4">{title}</h2>
           <p className="text-gray-700 mb-4">{description}</p>

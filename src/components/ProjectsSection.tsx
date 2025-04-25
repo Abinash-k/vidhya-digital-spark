@@ -9,19 +9,22 @@ const ProjectsSection = () => {
       title: "MSK Travels",
       description: "Designed and executed Meta & Instagram ad campaigns for bus services, achieving high conversion rates with minimal budget through strategic audience targeting.",
       category: "Meta Ads, Instagram",
-      image: "bg-gradient-to-br from-blue-400 to-blue-600"
+      image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop",
+      gradient: "bg-gradient-to-br from-blue-400 to-blue-600"
     },
     {
       title: "On Time Tourism",
       description: "Created a complete website setup including domain purchase and implementation, designed promotional posters, and managed Shirdi flight booking services.",
       category: "Web Development, Design",
-      image: "bg-gradient-to-br from-green-400 to-green-600"
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
+      gradient: "bg-gradient-to-br from-green-400 to-green-600"
     },
     {
       title: "Future Astro",
       description: "Established a full-scale Instagram presence, developed Meta ad campaigns, and created engaging Reels content that resulted in excellent client satisfaction and growth.",
       category: "Social Media, Meta Ads",
-      image: "bg-gradient-to-br from-purple-400 to-purple-600"
+      image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=2013&auto=format&fit=crop",
+      gradient: "bg-gradient-to-br from-purple-400 to-purple-600"
     }
   ];
 
@@ -70,7 +73,14 @@ const ProjectsSection = () => {
                     index === currentIndex ? "opacity-100" : "hidden opacity-0"
                   }`}
                 >
-                  <div className={`h-48 w-full ${project.image}`}></div>
+                  <div className="h-48 w-full relative">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className={`absolute inset-0 opacity-60 ${project.gradient}`}></div>
+                  </div>
                   <div className="p-6">
                     <span className="text-sm text-purple-600 font-medium">{project.category}</span>
                     <h3 className="text-xl font-bold mb-3">{project.title}</h3>
@@ -88,7 +98,14 @@ const ProjectsSection = () => {
                 key={index}
                 className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                <div className={`h-48 ${project.image}`}></div>
+                <div className="h-48 relative">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className={`absolute inset-0 opacity-60 ${project.gradient}`}></div>
+                </div>
                 <div className="p-6">
                   <span className="text-sm text-purple-600 font-medium">{project.category}</span>
                   <h3 className="text-xl font-bold mb-3">{project.title}</h3>
