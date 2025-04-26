@@ -16,9 +16,9 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       
-      <div className="relative">
+      <div className="relative py-20">
         <AboutSection />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 mt-8">
           <Link
             to="/about"
             className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
@@ -28,9 +28,9 @@ const Index = () => {
         </div>
       </div>
       
-      <div className="relative">
+      <div className="relative py-20">
         <SkillsSection />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 mt-8">
           <Link
             to="/skills"
             className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
@@ -40,9 +40,9 @@ const Index = () => {
         </div>
       </div>
       
-      <div className="relative">
+      <div className="relative py-20">
         <ProjectsSection />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 mt-8">
           <Link
             to="/projects"
             className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
@@ -52,9 +52,9 @@ const Index = () => {
         </div>
       </div>
       
-      <div className="relative">
+      <div className="relative py-20">
         <ExperienceSection />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 mt-8">
           <Link
             to="/experience"
             className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
@@ -66,9 +66,9 @@ const Index = () => {
       
       <TestimonialsSection />
       
-      <div className="relative">
+      <div className="relative py-20">
         <ContactSection />
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 mt-8">
           <Link
             to="/contact"
             className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors"
@@ -84,3 +84,4 @@ const Index = () => {
 };
 
 export default Index;
+
