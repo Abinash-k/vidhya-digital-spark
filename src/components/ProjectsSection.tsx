@@ -1,7 +1,6 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { ProjectBadge } from "@/components/ui/project-badge";
-import { Meta, Instagram, Canva } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const ProjectsSection = () => {
