@@ -10,21 +10,21 @@ const TestimonialsSection = () => {
       company: "MSK Travels",
       text: "Sri Vidhya's Meta Ads campaign for our bus service was incredibly effective. We saw a 200% increase in bookings with minimal ad spend. Her targeting strategies are exceptional!",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
+      avatar: "https://api.dicebear.com/7.x/fun-emoji/svg?seed=MohanK&backgroundColor=ffffff"
     },
     {
       name: "Rajesh Singh",
       company: "On Time Tourism",
       text: "Our website setup and promotion by Sri Vidhya was seamless. The posters she designed were eye-catching and our Shirdi flight bookings have increased significantly.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+      avatar: "https://api.dicebear.com/7.x/fun-emoji/svg?seed=RajeshS&backgroundColor=ffffff"
     },
     {
       name: "Priya Sharma",
       company: "Future Astro",
       text: "Sri completely transformed our Instagram presence. Her content strategy and Meta Ads approach helped us reach our target audience effectively. The Reels she created went viral!",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+      avatar: "https://api.dicebear.com/7.x/fun-emoji/svg?seed=PriyaS&backgroundColor=ffffff"
     }
   ];
 
