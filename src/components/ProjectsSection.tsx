@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { ProjectBadge } from "@/components/ui/project-badge";
 import { Instagram } from "lucide-react";
@@ -69,7 +70,7 @@ const ProjectsSection = () => {
         </h2>
         <div className="w-20 h-1 bg-purple-600 mx-auto mb-12 rounded-full"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <Card
               key={project.title}
@@ -92,15 +93,16 @@ const ProjectsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               
-              <div className="p-6">
+              <div className="p-4 md:p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.summary}</p>
+                <p className="text-gray-600 mb-4 text-sm md:text-base">{project.summary}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.badges.map((badge) => (
                     <ProjectBadge
                       key={badge.label}
                       label={badge.label}
                       variant={badge.variant as any}
+                      className="text-xs md:text-sm whitespace-nowrap"
                     />
                   ))}
                 </div>
